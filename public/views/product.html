@@ -1,4 +1,26 @@
 <div>
-    product html working and 
-    {{test}}
+    product html working and {{test}} {{product.id}}
+</div>
+<div class="product--header"></div>
+<div class="product--main">
+    <div>
+        <img ng-src="{{product.image1}}" alt="" class="product--image1">
+    </div>
+    <div style="background-image: url('{{product.backgroundurl}}')" class="product--bg_img">
+        <div class="product--img_parent">
+            <img ng-src="{{product.imageurl}}" alt="" class="product--img">
+        </div>
+        <div class="product--right_scroll">
+            <div class="right_scroll1">
+                <h2>{{product.name}}</h2>
+                <button class="product--add_cart" ng-click="showmeFn(); addCart(product)"><h1>Add To Bag - $ {{product.price}}</h1></button>
+                <h3>send gift hint</h3>
+            </div>
+            <div class="prod_description">
+                <h2>Description</h2>
+                <h2> Specifications</h2>
+                <h2>Shipping/Returns</h2>
+            </div>
+        </div>
+    </div>
 </div>

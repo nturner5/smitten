@@ -12,10 +12,10 @@ $stateProvider
     })
 
     .state('product', {
-        url: 'product',
+        url: '/product/:id',
         //change to :id
         controller: 'productCtrl',
-        templateUrl: 'views/product.html'
+        templateUrl: './views/product.html'
         // template: '<h1>Product works</h1>'
     })
 

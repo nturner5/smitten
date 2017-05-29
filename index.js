@@ -23,7 +23,7 @@ db.set_schema(function(err, data){
 var controller = require('./controller.js')
 
 app.get('/products', controller.getProducts)
-
+app.get('/product/:id', controller.showProd)
 var port = '3080'
 app.listen(port, function(){
   console.log("Successfully listening on : " + port)	

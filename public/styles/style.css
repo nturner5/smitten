@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
-
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.p {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+    /*font-weight: 100;*/
+    text-transform: uppercase;
+    color: #333;
+}
  /*__    __    ______   .___  ___.  _______ 
 |  |  |  |  /  __  \  |   \/   | |   ____|
 |  |__|  | |  |  |  | |  \  /  | |  |__   
@@ -52,7 +72,7 @@
 .home--product h1{
     text-align: center;
     color: #404040;
-    font-family: 'Lato', sans-serif;
+   
     font-weight: 100;
     font-size: 14px;
     letter-spacing: 1px;
@@ -62,6 +82,61 @@
     width: 25vw;
     height: 100%;
     margin: 30px;
+}
+
+.home--about {
+    width: 100%;
+    background-color: #f3f3f5;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    padding: 7%;
+    text-align: center;
+    align-items: center;
+    text-transform: inherit;
+    padding-bottom: 93px;
+}
+
+.home--about h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 300;
+}
+
+.home--about p{
+    font-size: 16px;
+    letter-spacing: .4px;
+    color: #9B9B90;
+    line-height: 30px;
+    width: 61vw;
+}
+
+.home--about_btn:hover {
+    box-shadow: inset 0 100px 0 0 #FFDCD3;
+    color: white;
+}
+
+.home--about_btn {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+    transition: all ease 0.8s;
+    margin-top: 20px;
+    width: 117px;
+    height: 36px;
+    background-color: #333333;
+    border-radius: 3px;
+    justify-content: center;
+    /*flex-direction: column;*/
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+
+.home--about_btn h2 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-top: 3.2px;
 }
 
 .global--flex{
@@ -79,6 +154,8 @@
 .nav-directive{
     display: none;
 }
+
+
 
  /*__  .__   __.      _______.___________.    ___       _______ .______          ___      .___  ___. 
 |  | |  \ |  |     /       |           |   /   \     /  _____||   _  \        /   \     |   \/   | 
@@ -163,3 +240,98 @@
     height: 50%;
    
 }
+
+ /*_______   ______     ______   .___________. _______ .______      
+|   ____| /  __  \   /  __  \  |           ||   ____||   _  \     
+|  |__   |  |  |  | |  |  |  | `---|  |----`|  |__   |  |_)  |    
+|   __|  |  |  |  | |  |  |  |     |  |     |   __|  |      /     
+|  |     |  `--'  | |  `--'  |     |  |     |  |____ |  |\  \----.
+|__|      \______/   \______/      |__|     |_______|| _| `._____|*/
+
+.footer--main {
+    height: 64vh;
+    background-color: #FEE9E5;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+    padding-left: 100px;
+    /*position: absolute;*/
+
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.footer--main h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 2px;
+    color: black;
+}
+
+.index--social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5vh;
+}
+
+.index--social_media {
+    padding-top: 30px
+}
+
+.index--social_media a {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+    border: 1px solid #eacac2;
+    border-radius: 2px
+}
+
+.index--social_media a img {
+    max-height: 23px;
+    max-width: 23px
+}
+
+/*.______   .______        ______    _______   __    __    ______ .___________.
+|   _  \  |   _  \      /  __  \  |       \ |  |  |  |  /      ||           |
+|  |_)  | |  |_)  |    |  |  |  | |  .--.  ||  |  |  | |  ,----'`---|  |----`
+|   ___/  |      /     |  |  |  | |  |  |  ||  |  |  | |  |         |  |     
+|  |      |  |\  \----.|  `--'  | |  '--'  ||  `--'  | |  `----.    |  |     
+| _|      | _| `._____| \______/  |_______/  \______/   \______|    |__|     */
+
+
+.product--header{
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*z-index: 10;*/
+    /*z-index: 10;*/
+    background-color: white;
+}
+
+.product--main{
+margin-top: 10vh;
+height: 90vh;
+width: 100vw;
+background-color: #f3f3f5;
+display: flex;
+position: fixed;
+/*z-index: -10;*/
+top: 0;
+}
+
+.product--image1{
+    height: 50vh;
+    position: fixed;
+   left: 30%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+    /*width: 100%;*/
+}
+

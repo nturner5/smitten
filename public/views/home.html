@@ -1,7 +1,6 @@
 <!--<div>
    Home View works and  {{testHome}}
 </div>-->
-
 <div class="home">
     <div class="home--mainPhoto">
         <img class="global--logo" src="https://s3.amazonaws.com/smittenmedia/logowhite.png" alt="">
@@ -11,17 +10,22 @@
             <h4>FREE SHIPPING </h4>
         </div>
         <h1 class="home--title">THE SMITTEN COLLECTION</h1>
-    
         <div class="global--flex ">
-            <div class="home--product" ng-repeat="product in products">
+            <div id="{{product.id}}" ng-click="prodView(product.id)" class="home--product" ng-repeat="product in products">
                 <img class="home--image1" src="{{product.image1}}" alt="">
-                <h1>{{product.name}}</h1> 
+                <h1>{{product.name}}</h1>
                 <h1> ${{product.price}}.00</h1>
             </div>
         </div>
         <div class="home--insta"></div>
-        
+    </section>
+    <section class="home--about">
+        <h2>PREMIUM MATERIAL & AUTHENTIC CRAFTSMANSHIP</h2>
+        <p>At Smitten Mitts we work with world class manufacturers to ensure quality is at the heart
+            of every mitt. Our quilted fabric allows for our mitts to be machine washed ensuring a functional mitt for years to come.</p>
+        <div class="home--about_btn">
+            <h2>About Us</h2>
+        </div>
     </section>
     <insta-component></insta-component>
-   
 </div>
