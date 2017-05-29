@@ -1,8 +1,77 @@
-.home-mainPhoto{
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+.home--mainPhoto{
     background-image: url(../img/bg-1.jpg);
     /*background-color: grey;*/
     height: 100vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
+}
+.home--products{
+    background-color: #F3F3F5;
+    text-align: center;
+
+}
+.home--freeShip{
+    height: 40px;
+    background-color: #FDE9E5;
+
+}
+.home--freeShip h4{
+    padding-top: 13px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.home--title{
+    margin-top: 5vh;
+    
+}
+.home--products h1{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.home--product{
+    /*display: flex;*/
+    /*width: 25vw;*/
+    height: 100%;
+}
+.home--product h1{
+    text-align: center;
+    color: #404040;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.home--image1{
+    width: 25vw;
+    height: 100%;
+    margin: 30px;
+}
+
+.global--flex{
+    display: flex;
+}
+
+.global--logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.nav-directive{
+    display: none;
+}
+
+.home--insta{
+    background-color: #F9F9F9;
 }

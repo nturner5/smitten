@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('controller', function($scope, mainSvc){
+    .controller('mainCtrl', function($scope, mainSvc, $state){
         $scope.test = 'controller working';
         $scope.test1 = mainSvc.test1;
         $scope.testHome = 'controller works on home view'

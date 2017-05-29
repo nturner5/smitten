@@ -1,10 +1,23 @@
-<div>
+<!--<div>
    Home View works and  {{testHome}}
-</div>
+</div>-->
 
 <div class="home">
-    <div class="home-mainPhoto"></div>
-    <div class="home--products" ng-repeat="product in products">
-        
+    <div class="home--mainPhoto">
+        <img class="global--logo" src="https://s3.amazonaws.com/smittenmedia/logowhite.png" alt="">
     </div>
+    <section class="home--products">
+        <div class="home--freeShip">
+            <h4>FREE SHIPPING </h4>
+        </div>
+        <h1 class="home--title">THE SMITTEN COLLECTION</h1>
+    
+        <div class="global--flex ">
+            <div class="home--product" ng-repeat="product in products">
+                <img class="home--image1" src="{{product.image1}}" alt="">
+                <h1>{{product.name}}</h1> 
+                <h1> ${{product.price}}.00</h1>
+            </div>
+        </div>
+    </section>
 </div>

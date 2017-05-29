@@ -6,7 +6,7 @@ angular.module('app', ['ui.router'])
 $stateProvider
     .state('home', {
         url: '/',
-        controller: 'controller',
+        controller: 'mainCtrl',
         templateUrl: 'views/home.html'
         // template: '<h1>hello world</h1>'
     })
