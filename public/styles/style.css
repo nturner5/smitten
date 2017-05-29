@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
+ /*__    __    ______   .___  ___.  _______ 
+|  |  |  |  /  __  \  |   \/   | |   ____|
+|  |__|  | |  |  |  | |  \  /  | |  |__   
+|   __   | |  |  |  | |  |\/|  | |   __|  
+|  |  |  | |  `--'  | |  |  |  | |  |____ 
+|__|  |__|  \______/  |__|  |__| |_______*/
+
+
 .home--mainPhoto{
     background-image: url(../img/bg-1.jpg);
     /*background-color: grey;*/
@@ -72,6 +80,86 @@
     display: none;
 }
 
-.home--insta{
-    background-color: #F9F9F9;
+ /*__  .__   __.      _______.___________.    ___       _______ .______          ___      .___  ___. 
+|  | |  \ |  |     /       |           |   /   \     /  _____||   _  \        /   \     |   \/   | 
+|  | |   \|  |    |   (----`---|  |----`  /  ^  \   |  |  __  |  |_)  |      /  ^  \    |  \  /  | 
+|  | |  . `  |     \   \       |  |      /  /_\  \  |  | |_ | |      /      /  /_\  \   |  |\/|  | 
+|  | |  |\   | .----)   |      |  |     /  _____  \ |  |__| | |  |\  \----./  _____  \  |  |  |  | 
+|__| |__| \__| |_______/       |__|    /__/     \__\ \______| | _| `._____/__/     \__\ |__|  |__|*/
+
+
+.insta--flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.insta--photos_parent {
+    width: 33.5%;
+    height: 30vw;
+   
+    background-color: red;
+    display: flex;
+   
+    flex-wrap: wrap;
+  
+}
+
+.insta--photos_child {
+    width: 50%;
+    height: 50%;
+
+}
+
+.home--instagram {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/instagram.jpg?7955300992394463818');
+    width: 33%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+ 
+}
+
+.home--instagram_content {
+  
+    height: 30vw;
+    ;
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home--instagram h2 {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.home--insta_icon1 {
+    margin-bottom: 20px;
+}
+
+.home--insta_photos {
+    width: 33.5%;
+    height: 30vw;
+    background-color: red;
+    display: flex;
+  
+    flex-wrap: wrap;
+
+}
+
+.insta-img {
+    width: 50%;
+    height: 50%;
+   
 }
