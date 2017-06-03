@@ -1,0 +1,30 @@
+<div class="cart">
+    
+    <div class="cart__overlay"></div>
+    <div class="cart-body">
+        <h1 class="cart-body__bag">YOUR BAG</h1>
+        <div class="cart-body__bag-border"></div>
+        <div class="cart-body__product-parent">
+            <div class="cart-body__product" ng-repeat="product in products">
+                <div class="global--flex">
+                    <div class="cart-body__product-details" >
+                        <p>{{product.name}} </p>
+                        <h1>${{product.price}}</h1>
+                    </div>
+                    <!--{{products}}-->
+                    <img class="cart-body__product-image" ng-src="{{product.image1}}" alt="">
+                </div>
+                <h2 class="cart-body__product-quantity">QUANTITY: {{product.id}}</h2>
+            </div>
+            
+         </div>   
+        <div class="cart-body__total" >
+            Total 
+            {{product.price}}
+        </div>
+        <div class="cart-body__button">
+            <h2 class="cart-body__button-title">PAY NOW SECURELY</h2>
+        </div>
+        
+    </div>
+</div>

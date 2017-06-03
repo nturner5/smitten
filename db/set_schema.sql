@@ -14,6 +14,6 @@ CREATE TABLE products (
 );
 
 INSERT INTO products (name, price, image1) VALUES 
-('Vintage Floral', 20, 'https://s3.amazonaws.com/smittenmedia/vintageready.jpg'),
-('Retro Poppy', 20, 'https://s3.amazonaws.com/smittenmedia/poppyready.jpg'),
-('Fresh Blossoms', 20, 'https://s3.amazonaws.com/smittenmedia/blossoms+ready.jpg');
+('VINTAGE FLORAL', 20, 'https://s3.amazonaws.com/smittenmedia/vintageready.jpg'),
+('RETRO POPPY', 20, 'https://s3.amazonaws.com/smittenmedia/poppyready.jpg'),
+('FRESH BLOSSOMS', 20, 'https://s3.amazonaws.com/smittenmedia/blossoms+ready.jpg');

@@ -11,15 +11,14 @@
     </head>
     <body>
 
-        <nav-directive></nav-directive>
+        <nav-component></nav-component>
         <ui-view></ui-view>
-        <!--<email></email>-->
+        <mail-component></mail-component>
         <footer-component></footer-component>
+        <cart-component></cart-component>
         <a ui-sref='product' ui-sref-active="active">Product</a>
         <a ui-sref='home' ui-sref-active="active">Home</a>
-<!--{{test}}
 
-{{test1}}-->
     <script src="../node_modules/angular/angular.js"></script>
     <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
@@ -30,12 +29,16 @@
     <script src="app.js"></script>
     <script src="controllers/mainCtrl.js"></script>
     <script src="controllers/productCtrl.js"></script>
-    <script src="controllers/navCtrl.js"></script>
+    <!--<script src="controllers/navCtrl.js"></script>-->
+    <script src="controllers/cartCtrl.js"></script>
     <script src="controllers/instaCtrl.js"></script>
     <script src="services/service.js"></script>
     <script src="directives/nav-directive.js"></script>
     <script src="directives/insta-component.js"></script>
     <script src="directives/footer-component.js"></script>
+    <script src="directives/nav-component.js"></script>
+    <script src="directives/mail-component.js"></script>
+    <script src="directives/cart-component.js"></script>
 
     
     
