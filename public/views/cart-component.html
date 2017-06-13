@@ -9,17 +9,17 @@
                 <div class="global--flex">
                     <div class="cart-body__product-details" >
                         <p>{{product.name}} </p>
-                        <h1>${{product.price}}</h1>
+                <h2 class="cart-body__product-quantity">QUANTITY: {{product.id}}</h2>
+                        <h1>${{product.price}}.00</h1>
                     </div>
                     <!--{{products}}-->
                     <img class="cart-body__product-image" ng-src="{{product.image1}}" alt="">
                 </div>
-                <h2 class="cart-body__product-quantity">QUANTITY: {{product.id}}</h2>
             </div>
             
          </div>   
         <div class="cart-body__total" >
-            Total 
+            TOTAL 
             {{product.price}}
         </div>
         <div class="cart-body__button">
